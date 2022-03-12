@@ -1,0 +1,72 @@
+body
+    .main-container
+        .fondodatos
+            background: url("https://ismaelgomezperez.github.io/Vaccination-DemoPage/src/img/fondoL2.png")
+            background-size:  180px
+            background-position-x: right
+            background-repeat: no-repeat
+            .contenedorDatos
+                width: 90%
+                margin: 0px auto
+                display: grid
+                grid-template-columns: 1fr
+                margin-bottom: 50px
+                .texto
+                    .titulo
+                        font-family: 'Roboto', sans-serif
+                        width: 70%
+                        color: #1f3e72
+                        font-weight: 900
+                        font-size: 40px
+                    .text
+                        margin: 20px 0px
+                        width: 375px
+                        font-family: 'League Spartan', sans-serif;
+                        color: #6f7d95
+                        font-size: 16px
+                        line-height: 1.5
+                .datos
+                    display: grid
+                    grid-template-columns: repeat(4,1fr)
+                    justify-content: space-between
+                    .dato
+                        width: 90%
+                        padding: 20px
+                        border: 3px solid rgba(244,246,251,.6)
+                        border-radius: 10px
+                        padding-bottom: 50px
+                        &:hover
+                            background: radial-gradient(rgba(53,85,211,.08) 5%, #fff 40%)
+                            border: 3px solid #fff
+                            box-shadow: 0px 10px 20px rgba(48,80,205,.1)
+                            .material-icons
+                                box-shadow: 0px 0px 15px rgba(48,80,205,.1)
+                        .material-icons
+                            background: #e9f1fd 
+                            padding: 5px
+                            border-radius: 6px
+                            color: #3454d2
+                            border: 2px solid #fff
+                            margin-bottom: 15px
+                        .titulo
+                            font-family: 'League Spartan', sans-serif;
+                            color: #1f3e72
+                            width: 79%
+                            font-size: 20px
+                            font-weight: 500
+                            margin-bottom: 15px
+                        .text
+                            font-family: 'League Spartan', sans-serif;
+                            color: #6f7d95
+                            width: 95%
+                            font-size: 14px
+                            line-height: 1.3
+@media screen and (max-width: 850px)
+    body
+        .main-container
+            .fondodatos
+                .contenedorDatos
+                    .datos
+                        grid-template-columns: repeat(2,1fr)
+                        .dato
+                            margin-bottom: 20px                              

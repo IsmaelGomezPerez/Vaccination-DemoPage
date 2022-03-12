@@ -1,0 +1,270 @@
+body
+    header
+        .header
+            display: grid
+            width: 100%
+            grid-template-columns: 1fr 1fr
+            .textHeader
+                margin-top: 30%
+                margin-left: 10%
+                background: url("https://ismaelgomezperez.github.io/Vaccination-DemoPage/src/img/fondoL.png")
+                background-size:  180px
+                background-position-x: right
+                background-repeat: no-repeat
+                .muduloUbi1100
+                    display: none
+                .titulo
+                    font-family: 'Roboto', sans-serif
+                    width: 70%
+                    color: #1f3e72
+                    font-weight: 900
+                    font-size: 40px
+                .text
+                    margin: 20px 0px
+                    width: 60%
+                    font-family: 'League Spartan', sans-serif;
+                    color: #6f7d95
+                    font-size: 16px
+                    line-height: 1.5
+                .contenedorIco
+                    display: grid
+                    grid-template-columns: 1fr 1fr 1fr
+                    .ico
+                        display: grid
+                        grid-template-columns: auto auto   
+                        align-items: center 
+                        justify-items: center
+                        p
+                            display: inline-block
+                            color:#214073 
+                            justify-self: left
+                            font-size: 15px                         
+                        span
+                            width: 24px
+                            justify-self: right
+                            margin-right: 15px
+                            box-shadow: 0px 5px 10px rgba(255,208,18,.3)
+                            color: #ffd012
+                            background: #fffae8
+                            border-radius: 2px
+            .imgHeader
+                
+                
+                img
+                    background: linear-gradient(to bottom right, #0a97e6, #3861db)
+                    width: 100%
+                    
+                    
+            .muduloUbi
+                position: absolute
+                top: 75%
+                left: 5%
+                .tituloForm
+                    display: grid
+                    grid-template-columns: auto auto 1fr  
+                    align-items: center 
+                    justify-items: center
+                    margin-bottom: 30px
+                    .material-icons
+                        background: #e9f1fd 
+                        padding: 3px
+                        border-radius: 2px
+                        color: #3454d2
+                        box-shadow: 0px 10px 10px rgba(52,84,210,.5) 
+                    p
+                        display: inline-block
+                        font-family: 'Roboto', sans-serif
+                        font-weight: 600
+                        margin-left: 10px
+                        color:#203f73
+                        justify-self: left
+                        font-size: 15px  
+                .form
+                    width: 
+                    display: grid
+                    grid-template-columns: repeat(4,1fr)
+                    background: rgba(255,255,255,.95)
+                    justify-items: center
+                    align-items: center
+                    width: 800px
+                    border-radius: 5px
+                    box-shadow: 0px 10px 20px rgba(56,88,214,.2)
+                    padding: 20px
+                    .btn-blue
+                        opacity: 1
+                        padding: 10px 20px
+                        border-radius: 4px
+                        border-radius: 4px
+                        background: #3757d5
+                        color: #fff
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: 400
+                        font-size: 16px
+                        border: none
+                        box-shadow: 0px 10px 10px rgba(56,88,214,.3)
+                        cursor: pointer
+                        &:hover
+                            box-shadow: 0px 10px 10px rgba(56,88,214,.7) 
+                    .dato
+                        p
+                            display: inline-block
+                            margin-bottom: 10px
+                            color: #6f7d95
+                            font-weight: 500
+                        select
+                            display: block
+                            background: transparent
+                            border: none
+                            text-decoration: none
+                            padding-left: 18px
+                            font-family: 'Roboto', sans-serif
+                            font-weight: 600
+                            margin-left: 10px
+                            color:#203f73
+                            justify-self: left
+                            font-size: 15px  
+                        input
+                            display: block
+                            background: transparent
+                            border: none
+                            text-decoration: none
+                            padding-left: 18px
+                            font-family: 'Roboto', sans-serif
+                            font-weight: 600
+                            margin-left: 10px
+                            color:#203f73
+                            justify-self: left
+                            font-size: 15px
+                            &::-webkit-calendar-picker-indicator
+                                display: none
+                            &:focus
+                                background: transparent
+                                outline: none
+                                
+                        span
+                            background: #e9f1fd 
+                            padding: 3px
+                            border-radius: 2px
+                            color: #3454d2
+
+@media screen and (max-width: 1150px)
+    body
+        .main-container
+            header
+                .header
+                    .textHeader
+                        .contenedorIco
+                            padding-bottom: 80px
+                        .muduloUbi1100
+                            display: grid
+                            width: 90%
+                            .tituloForm
+                                justify-items: center
+                                margin-bottom: 30px
+                                .material-icons
+                                    background: #e9f1fd 
+                                    padding: 3px
+                                    border-radius: 2px
+                                    color: #3454d2
+                                    box-shadow: 0px 10px 10px rgba(52,84,210,.5) 
+                                p
+                                    display: inline-block
+                                    font-family: 'Roboto', sans-serif
+                                    font-weight: 600
+                                    margin-left: 10px
+                                    color:#203f73
+                                    justify-self: left
+                                    font-size: 15px  
+                            .form
+                                position: relative
+                                display: grid
+                                grid-template-columns: repeat(4,1fr)
+                                background: rgba(255,255,255,.95)
+                                justify-items: center
+                                align-items: center
+                                width: 100%
+                                border-radius: 5px
+                                box-shadow: 0px 10px 20px rgba(56,88,214,.2)
+                                padding: 20px
+                                .btn-blue
+                                    opacity: 1
+                                    padding: 10px 20px
+                                    border-radius: 4px
+                                    border-radius: 4px
+                                    background: #3757d5
+                                    color: #fff
+                                    font-family: 'Roboto', sans-serif;
+                                    font-weight: 400
+                                    font-size: 16px
+                                    border: none
+                                    box-shadow: 0px 10px 10px rgba(56,88,214,.3)
+                                    cursor: pointer
+
+                                    &:hover
+                                        box-shadow: 0px 10px 10px rgba(56,88,214,.7) 
+                                .dato
+                                    p
+                                        display: inline-block
+                                        margin-bottom: 10px
+                                        color: #6f7d95
+                                        font-weight: 500
+                                    select
+                                        display: block
+                                        background: transparent
+                                        border: none
+                                        text-decoration: none
+                                        padding-left: 18px
+                                        font-family: 'Roboto', sans-serif
+                                        font-weight: 600
+                                        margin-left: 10px
+                                        color:#203f73
+                                        justify-self: left
+                                        font-size: 15px  
+                                    input
+                                        display: block
+                                        background: transparent
+                                        border: none
+                                        text-decoration: none
+                                        padding-left: 18px
+                                        font-family: 'Roboto', sans-serif
+                                        font-weight: 600
+                                        margin-left: 10px
+                                        color:#203f73
+                                        justify-self: left
+                                        font-size: 15px
+                                        &::-webkit-calendar-picker-indicator
+                                            display: none
+                                        &:focus
+                                            background: transparent
+                                            outline: none
+                                            
+                                    span
+                                        background: #e9f1fd 
+                                        padding: 3px
+                                        border-radius: 2px
+                                        color: #3454d2
+                    .muduloUbi
+                        display: none
+@media screen and (max-width: 980px)
+    body
+    .main-container
+        header
+            .header
+                display: grid
+                grid-template-columns: 1fr
+                .imgHeader
+                    display: none
+                .textHeader
+                    .muduloUbi1100
+                        .form
+                            grid-template-columns: repeat(3,1fr) !important
+                            .btn
+                                grid-column: 2/3
+                                .btn-blue
+                                    margin-top: 15px
+
+
+     
+
+
+                            

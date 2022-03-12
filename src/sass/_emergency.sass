@@ -1,0 +1,129 @@
+body
+    .main-container
+            .emergency
+                background: url("https://ismaelgomezperez.github.io/Vaccination-DemoPage/src/img/fondoL2.png")
+                background-size:  180px
+                background-position-x: right
+                background-repeat: no-repeat
+                margin-left: 5%
+                margin-top: 80px
+                display: grid
+                grid-template-columns: 55fr 45fr
+                .img-doc
+                    align-self: end
+                    img
+                        background: linear-gradient(to bottom right, #0a97e6, #3861db)
+                        background-size:  100% 75%
+                        background-position-y: bottom 
+                        background-repeat: no-repeat
+                        width: 100%
+                        min-width: 400px
+                .conterDatos
+                    .textos
+                        .titulo
+                            font-family: 'Roboto', sans-serif
+                            width: 100%
+                            color: #1f3e72
+                            font-weight: 900
+                            font-size: 40px 
+                        .texto
+                            margin: 20px 0px
+                            width: 375px
+                            font-family: 'League Spartan', sans-serif;
+                            color: #6f7d95
+                            font-size: 16px
+                            line-height: 1.5
+                    .botones
+                        
+                        display: grid
+                        grid-template-columns: 1fr 1fr
+                    
+                        .boton
+                            padding: 10px
+                            border: 3px solid rgba(244,246,251,.6)
+                            border-radius: 10px
+                            margin: 5%
+                            &:hover
+                                background: radial-gradient(rgba(53,85,211,.08) 5%, #fff 40%)
+                                border: 3px solid #fff
+                                box-shadow: 0px 10px 20px rgba(48,80,205,.1)
+                                .material-icons
+                                    box-shadow: 0px 0px 15px rgba(48,80,205,.1)
+                                .btn-blue
+                                    background: #3454d2
+                                    color: #e9f1fd
+                                    box-shadow: 0px 10px 10px rgba(56,88,214,.3)   
+
+                            .material-icons
+                                background: #e9f1fd
+                                padding: 10px
+                                border-radius: 6px
+                                color: #3454d2
+                                border: 2px solid #fff
+                                display: inline-block
+                            .conten
+                                align-content: center
+                                display: inline-block
+                                margin-left: 2%
+                                align-content: space-between
+                                
+                                .titulo                                                                    
+                                    font-family: 'League Spartan', sans-serif;
+                                    color: #1f3e72
+                                    font-size: 25px
+                                    font-weight: 500
+                                    
+                                .texto
+                                    font-family: 'League Spartan', sans-serif;
+                                    color: #6f7d95
+                                    font-size: 16px
+                            .btn-blue
+                                margin-top: 30px
+                                padding: 10px 20px
+                                height: auto
+                                width: auto
+                                border-radius: 4px
+                                background: #e9f1fd
+                                color: #3454d2
+                                font-family: 'Roboto', sans-serif;
+                                font-weight: 700
+                                font-size: 16px
+                                text-align: center
+                                cursor: pointer                                
+@media screen and (max-width: 900px)
+    body
+        .main-container
+            .emergency
+                .conterDatos
+                    .botones
+                        .boton
+                            .gb
+                                font-size: 14px
+                            .conten
+                                .g
+                                    font-size: 20px
+@media screen and (max-width: 865px)
+    body
+        .main-container
+            .emergency
+                .conterDatos
+                    .botones
+                        .boton
+                            .conten
+                                .titulo
+                                    font-size: 20px
+                                .texto
+                                    font-size: 14px
+                            .gb
+                                font-size: 14px
+                            .conten
+                                .g
+                                    font-size: 16px
+@media screen and (max-width: 750px)
+    body
+        .main-container
+            .emergency
+                .img-doc
+                    display: none
+                .conterDatos
+                    grid-column: span 2
